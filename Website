@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ground & Glow | Scented Healing Melts</title>
+    <style>
+        :root {
+            --primary: #3A5635;
+            --secondary: #FFF CED;
+            --accent: #C07F62;
+            --accent-hover: #A06045;
+            --sage: #8DA399;
+            --text: #2C2C2C;
+        }
+
+        body {
+            font-family: 'Helvetica Neue', sans-serif;
+            background-color: var(--secondary);
+            color: var(--text);
+            margin: 0;
+            padding: 0;
+            line-height: 1.6;
+        }
+
+        /* Navigation */
+        nav {
+            background-color: var(--primary);
+            padding: 1rem 2rem;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo {
+            color: var(--secondary);
+            font-size: 1.5rem;
+            font-weight: bold;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+        }
+
+        .nav-links a {
+            color: var(--secondary);
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 0.9rem;
+        }
+
+        /* Hero Section */
+        .hero {
+            background-color: var(--sage); /* Placeholder for image */
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 20px;
+            color: var(--primary);
+        }
+
+        .hero h1 {
+            font-size: 3.5rem;
+            margin-bottom: 10px;
+        }
+
+        .hero p {
+            font-size: 1.2rem;
+            max-width: 600px;
+            margin-bottom: 30px;
+        }
+
+        .btn {
+            background-color: var(--accent);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn:hover {
+            background-color: var(--accent-hover);
+        }
+
+        /* Product Section */
+        .products {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .section-title {
+            text-align: center;
+            color: var(--primary);
+            margin-bottom: 3rem;
+        }
+
+        .grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+        }
+
+        .card {
+            background: white;
+            border: 1px solid #e0e0e0;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+            transition: transform 0.2s;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card-img {
+            height: 250px;
+            background-color: var(--primary); /* Placeholder for product image */
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: var(--secondary);
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-tag {
+            background-color: var(--sage);
+            color: white;
+            padding: 4px 10px;
+            border-radius: 4px;
+            font-size: 0.8rem;
+            text-transform: uppercase;
+        }
+
+        .card h3 {
+            color: var(--primary);
+            margin: 10px 0;
+        }
+
+        .tool-highlight {
+            font-size: 0.9rem;
+            color: #666;
+            font-style: italic;
+            margin-bottom: 15px;
+            border-left: 3px solid var(--accent);
+            padding-left: 10px;
+        }
+
+        /* Footer */
+        footer {
+            background-color: var(--primary);
+            color: var(--secondary);
+            text-align: center;
+            padding: 3rem 1rem;
+            margin-top: 4rem;
+        }
+
+        .mental-health-note {
+            font-size: 0.8rem;
+            opacity: 0.8;
+            max-width: 600px;
+            margin: 20px auto 0;
+        }
+
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">Ground & Glow</div>
+        <div class="nav-links">
+            <a href="#">Shop by Feeling</a>
+            <a href="#">The Tools</a>
+            <a href="#">Our Story</a>
+            <a href="#">Cart (0)</a>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <h1>Light the Way Through</h1>
+        <p>Scented jelly melts curated to support your mental health journey. Each candle comes with a guided tool to help you overcome.</p>
+        <a href="#" class="btn">Find Your Anchor</a>
+    </section>
+
+    <!-- Product Grid -->
+    <section class="products">
+        <h2 class="section-title">Curated for Your Mindset</h2>
+        <div class="grid">
+            
+            <!-- Product 1 -->
+            <div class="card">
+                <div class="card-img">Product Image</div>
+                <div class="card-content">
+                    <span class="card-tag">For Anxiety</span>
+                    <h3>The Deep Breath</h3>
+                    <p class="tool-highlight">Includes: 4-7-8 Breathing Technique Card</p>
+                    <p>Scent Notes: Lavender, Sage, Bergamot.</p>
+                    <br>
+                    <button class="btn" style="width:100%">Add to Cart - $18</button>
+                </div>
+            </div>
+
+            <!-- Product 2 -->
+            <div class="card">
+                <div class="card-img">Product Image</div>
+                <div class="card-content">
+                    <span class="card-tag">For Focus</span>
+                    <h3>The Clarity Melt</h3>
+                    <p class="tool-highlight">Includes: "Brain Dump" Journaling Sheet</p>
+                    <p>Scent Notes: Lemon, Rosemary, Eucalyptus.</p>
+                    <br>
+                    <button class="btn" style="width:100%">Add to Cart - $18</button>
+                </div>
+            </div>
+
+            <!-- Product 3 -->
+            <div class="card">
+                <div class="card-img">Product Image</div>
+                <div class="card-content">
+                    <span class="card-tag">For Grief</span>
+                    <h3>The Soft Landing</h3>
+                    <p class="tool-highlight">Includes: Affirmations for Hard Days</p>
+                    <p>Scent Notes: Sandalwood, Vanilla, Amber.</p>
+                    <br>
+                    <button class="btn" style="width:100%">Add to Cart - $18</button>
+                </div>
+            </div>
+
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <h3>Ground & Glow</h3>
+        <p>Healing through scent and mindfulness.</p>
+        <div class="mental-health-note">
+            <strong>Note:</strong> While our products are designed to support wellness, they are not a substitute for professional medical advice, diagnosis, or treatment.
+        </div>
+    </footer>
+
+</body>
+</html>
+
